@@ -1,0 +1,52 @@
+body {
+    margin: 80px;
+    color: white;
+    font-family: "Roboto";
+    background-image: url(https://as.com/meristation/imagenes/2020/12/15/betech/1608041561_099927_1608041665_noticia_normal_recorte1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 3rem;
+    margin-top: -20px;
+}
+.subtitle{
+    font-size: 2rem;
+    margin-top: -20px;
+}
+.form{
+    margin-top: -20px;
+}
+
+input {
+    padding: 0.5em 0.5em;
+    font-size: 1.5rem;
+    border: 50px solid rgb(245, 241, 238);
+    border-radius: 50px;
+    /* border-bottom: 1px solid #d87606; */
+    box-shadow: inset 0 1px 0 rgba(241, 238, 238, 0.5);
+    color: blue;
+    background-color: transparent; 
+    border: none;
+    line-height: inherit;
+    outline: none;
+    cursor: pointer;
+}
+button{
+    padding: 0.5em 0.5em;
+    font-size: 1.5rem;
+    border: 1px solid #e78a0f;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: none;
+    line-height: inherit;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(15, 78, 172, 0.938);
+    margin-top: 30px;
+}
