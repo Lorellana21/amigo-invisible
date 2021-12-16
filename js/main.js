@@ -25,7 +25,7 @@ function getPlayerName(i) {
 }
 
 function showResults() {
-  for (let i = 0; i < assignedPlayerToGift.length; i++) {
+  for (let i = 0; i < 5; i++) {
     alert(
       getPlayerName(i) + "  regala a  " + getPlayerName(assignedPlayerToGift[i])
     );
