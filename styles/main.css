@@ -1,52 +1,45 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Roboto";
-}
-img{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 0.3;
-    z-index: -10;
+  box-sizing: border-box;
+  background-image: url(https://i.pinimg.com/736x/29/ef/47/29ef47bcf83177a594b65a42589170a5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
 
-.wrap{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-h1{
+.title, .subtitle{
   font-size: 2rem;
-  position: relative;
-  margin-top: 10px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 40px;
 }
 form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
 input {
+  margin-top: 5px;
+  width: 50%;
   padding: 0.5em 0.5em;
-  width: 150px;
+  box-sizing: border-box;
   font-size: 1rem;
-  border: solid 2px red;
+  opacity: .8;
+  border: none;
   border-radius: 200px;
-  background-color: transparent;
-  outline: none;
   cursor: pointer;
-  color: red;
+  
 }
 ::placeholder{
-  color: grey;
+  color: green;
+  font-weight: bold;
 }
 button {
+  margin-left: 20px;
   margin-top: 30px;
   padding: 0.5em 0.5em;
   font-size: 1rem;
