@@ -3,52 +3,63 @@ body {
   padding: 0;
   font-family: "Roboto";
   box-sizing: border-box;
-  background-image: url(https://i.pinimg.com/736x/29/ef/47/29ef47bcf83177a594b65a42589170a5.jpg);
+  background-image: url(https://i.pinimg.com/originals/34/8e/f5/348ef5fcfa280445aa286f93565ae4cf.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
 }
 
-
-.title, .subtitle{
+.title,
+.subtitle {
   font-size: 2rem;
   color: white;
-  margin-left: 20px;
-  margin-top: 40px;
+  text-align: center;
 }
-form{
-  width: 250px;
-  margin-left: 20px;
-  margin-top: 50px;
-}
+
+
+.form {
+  margin-left: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  .players{
+    width: 50%;
+  }
 
 input {
   margin-top: 5px;
-  width: 50%;
+  width: 80%;
   padding: 0.5em 0.5em;
   box-sizing: border-box;
   font-size: 1rem;
-  opacity: .8;
+  opacity: 0.8;
   border: none;
   border-radius: 200px;
   cursor: pointer;
-  
 }
-::placeholder{
+::placeholder {
   color: green;
   font-weight: bold;
 }
 button {
-  margin-left: 20px;
-  margin-top: 30px;
+  width: 100px;
+  margin-top: 40px;
   padding: 0.5em 0.5em;
   font-size: 1rem;
-  width: 150px;
   border-radius: 200px;
   border: 4px;
   outline: none;
   cursor: pointer;
   color: white;
-  
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(240,31,46,0.9528186274509804) 100%);
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(74,195,156,1) 23%, rgba(208,203,24,0.6923144257703081) 100%);
 }
+
