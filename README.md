@@ -7,7 +7,7 @@ El **amigo invisible**, o **secret santa**, en inglés, es un juego tradicional 
 Se suele jugar en Navidad🎄, y se abren los regalos el último dia de cole, en la cena o comida de empresa, o el dia de Reyes Magos!🤴 El juego se puede desarrollar con cualquier excusa siempre que se cumplan dos requisitos:
 
 - que los participantes se conozcan entre sí,👨‍👨‍👧‍👧
-- que su número no sea muy elevado (aqui hay un máximo de 5, pero si sois 10, podeis hacer 2 sorteos por ejemplo).
+- que su número no sea muy elevado (aqui hay un máximo de 10).
 
 Tradicionalmente, para prepararlo, era necesario que los participantes se reuniesen o coordinasen unas semanas antes de la fecha indicada para la entrega de regalos. El organizador u organizadora escribía los nombres de todos los participantes en unos papelitos y los depositaba en una bolsa. Luego, uno por uno, iban introduciendo la mano y escogiendo el 'amigo invisible'. 
 
