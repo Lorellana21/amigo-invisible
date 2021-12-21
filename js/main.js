@@ -12,7 +12,7 @@ function getInputValue(event){
    namesIntroduced.push(playerNameIntroduced);
 }
 for(const input of inputsElement){
-  input.addEventListener("change", getInputValue);//cuando un input cambie quiero coger su value y meterlo en array
+  input.addEventListener("change", getInputValue);
 }
 
 
