@@ -1,52 +1,29 @@
-"use strict";
+"use strict"
 
-let playerList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-let assignedPlayerToGift = [];
-const formElement = document.querySelector(".js-formSecond");
+let namesIntroduced = [];
+
+
 const button = document.querySelector(".js-btn");
+const inputsElement = document.querySelectorAll(".js-input");
 
-function doMatches() {
-  do {
-    assignedPlayerToGift = playerList.sort((a, b) => 0.5 - Math.random());
-  } while (
-    assignedPlayerToGift[0] === 0 ||
-    assignedPlayerToGift[1] === 1 ||
-    assignedPlayerToGift[2] === 2 ||
-    assignedPlayerToGift[3] === 3 ||
-    assignedPlayerToGift[4] === 4 ||
-    assignedPlayerToGift[5] === 5 ||
-    assignedPlayerToGift[6] === 6 ||
-    assignedPlayerToGift[7] === 7 ||
-    assignedPlayerToGift[8] === 8 ||
-    assignedPlayerToGift[9] === 9
-  );
-  console.log(assignedPlayerToGift);
+function getInputValue(event){
+   const playerName = event.target;
+   const playerNameIntroduced = playerName.value;
+   namesIntroduced.push(playerNameIntroduced);
+}
+for(const input of inputsElement){
+  input.addEventListener("change", getInputValue);//cuando un input cambie quiero coger su value y meterlo en array
 }
 
-function getPlayerName(i) {
-  if (i === 0) return document.getElementById("player0").value;
-  if (i === 1) return document.getElementById("player1").value;
-  if (i === 2) return document.getElementById("player2").value;
-  if (i === 3) return document.getElementById("player3").value;
-  if (i === 4) return document.getElementById("player4").value;
-  if (i === 5) return document.getElementById("player5").value;
-  if (i === 6) return document.getElementById("player6").value;
-  if (i === 7) return document.getElementById("player7").value;
-  if (i === 8) return document.getElementById("player8").value;
-  if (i === 9) return document.getElementById("player9").value;
+
+function showResults(){
+  alert(namesIntroduced[0] + " regala a " + namesIntroduced[2]);
+    alert(namesIntroduced[1] + " regala a " + namesIntroduced[3]);
+    alert(namesIntroduced[2] + " regala a " + namesIntroduced[0]);
+    alert(namesIntroduced[3] + " regala a " + namesIntroduced[4]);
+    alert(namesIntroduced[4] + " regala a " + namesIntroduced[1]);
 }
 
-function showResults() {
-  for (let i = 0; i < 10; i++) {
-    alert(
-      getPlayerName(i) + " regala a " + getPlayerName(assignedPlayerToGift[i])
-    );
-  }
-}
+button.addEventListener("click", showResults)
 
-function handleSecretSanta() {
-  doMatches();
-  showResults();
-}
-
-button.addEventListener("click", handleSecretSanta);
+  
