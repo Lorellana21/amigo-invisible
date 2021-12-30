@@ -1,20 +1,19 @@
 "use strict"
 
+
 let namesIntroduced = [];
 
 
 const button = document.querySelector(".js-btn");
 const inputsElement = document.querySelectorAll(".js-input");
+const formElement = document.querySelector ('.js-form');
 
 function getInputValue(event){
    const playerName = event.target;
-   const playerNameIntroduced = playerName.value;
+   let playerNameIntroduced = playerName.value;
    namesIntroduced.push(playerNameIntroduced);
 }
-for(const input of inputsElement){
-  input.addEventListener("change", getInputValue);
-}
-
+formElement.addEventListener("change", getInputValue);
 
 function showResults(){
   alert(namesIntroduced[0] + " regala a " + namesIntroduced[2]);
@@ -25,5 +24,20 @@ function showResults(){
 }
 
 button.addEventListener("click", showResults)
+
+
+
+const resetButton = document.createElement('input');
+resetButton.type = 'Reset';
+resetButton.style = 'display: none;'
+const resetContent = document.createTextNode('Reset');
+resetButton.appendChild(resetContent);
+document.body.appendChild(resetButton);
+
+
+
+ window.addEventListener('load', (event) => {
+   console.log('page is fully loaded');
+ });
 
   
