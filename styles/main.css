@@ -60,4 +60,6 @@ button {
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(74,195,156,1) 23%, rgba(208,203,24,0.6923144257703081) 100%);
 }
-
+.hidden{
+  display: none;
+}
