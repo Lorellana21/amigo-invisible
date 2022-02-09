@@ -1,17 +1,15 @@
 body {
-  margin: 0 auto;
-  padding: 0;
   font-family: "Roboto";
   box-sizing: border-box;
-  background-image: url(https://i.pinimg.com/originals/34/8e/f5/348ef5fcfa280445aa286f93565ae4cf.jpg);
+  background-image: url("https://m.media-amazon.com/images/I/71dVlV1MDLL._AC_SX679_.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top; 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
+  justify-content: start;
+  text-align: center;
 }
 
 .title,
@@ -33,7 +31,6 @@ body {
 
 input {
   margin-top: 5px;
-  width: 40%;
   padding: 0.5em 0.5em;
   box-sizing: border-box;
   font-size: 1rem;
